@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A12734251E5FB0830089DADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12734241E5FB0830089DADE /* AppDelegate.swift */; };
+		A127342A1E5FB0830089DADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12734281E5FB0830089DADE /* Main.storyboard */; };
+		A127342C1E5FB0830089DADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A127342B1E5FB0830089DADE /* Assets.xcassets */; };
+		A127342F1E5FB0830089DADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A127342D1E5FB0830089DADE /* LaunchScreen.storyboard */; };
+		A127343A1E5FB0830089DADE /* MeiTuanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12734391E5FB0830089DADE /* MeiTuanTests.swift */; };
+		A12734451E5FB0830089DADE /* MeiTuanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12734441E5FB0830089DADE /* MeiTuanUITests.swift */; };
+		A127345C1E5FB2070089DADE /* MTHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127345B1E5FB2070089DADE /* MTHomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A12734361E5FB0830089DADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A12734191E5FB0830089DADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A12734201E5FB0830089DADE;
+			remoteInfo = MeiTuan;
+		};
+		A12734411E5FB0830089DADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A12734191E5FB0830089DADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A12734201E5FB0830089DADE;
+			remoteInfo = MeiTuan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A12734211E5FB0830089DADE /* MeiTuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12734241E5FB0830089DADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A12734291E5FB0830089DADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A127342B1E5FB0830089DADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A127342E1E5FB0830089DADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A12734301E5FB0830089DADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12734351E5FB0830089DADE /* MeiTuanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiTuanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12734391E5FB0830089DADE /* MeiTuanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeiTuanTests.swift; sourceTree = "<group>"; };
+		A127343B1E5FB0830089DADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12734401E5FB0830089DADE /* MeiTuanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiTuanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12734441E5FB0830089DADE /* MeiTuanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeiTuanUITests.swift; sourceTree = "<group>"; };
+		A12734461E5FB0830089DADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A127345B1E5FB2070089DADE /* MTHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTHomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A127341E1E5FB0830089DADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12734321E5FB0830089DADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A127343D1E5FB0830089DADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12734181E5FB0830089DADE = {
+			isa = PBXGroup;
+			children = (
+				A12734231E5FB0830089DADE /* MeiTuan */,
+				A12734381E5FB0830089DADE /* MeiTuanTests */,
+				A12734431E5FB0830089DADE /* MeiTuanUITests */,
+				A12734221E5FB0830089DADE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A12734221E5FB0830089DADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A12734211E5FB0830089DADE /* MeiTuan.app */,
+				A12734351E5FB0830089DADE /* MeiTuanTests.xctest */,
+				A12734401E5FB0830089DADE /* MeiTuanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A12734231E5FB0830089DADE /* MeiTuan */ = {
+			isa = PBXGroup;
+			children = (
+				A12734521E5FB1990089DADE /* Classes */,
+				A12734241E5FB0830089DADE /* AppDelegate.swift */,
+				A127345A1E5FB1C10089DADE /* resource */,
+			);
+			path = MeiTuan;
+			sourceTree = "<group>";
+		};
+		A12734381E5FB0830089DADE /* MeiTuanTests */ = {
+			isa = PBXGroup;
+			children = (
+				A12734391E5FB0830089DADE /* MeiTuanTests.swift */,
+				A127343B1E5FB0830089DADE /* Info.plist */,
+			);
+			path = MeiTuanTests;
+			sourceTree = "<group>";
+		};
+		A12734431E5FB0830089DADE /* MeiTuanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A12734441E5FB0830089DADE /* MeiTuanUITests.swift */,
+				A12734461E5FB0830089DADE /* Info.plist */,
+			);
+			path = MeiTuanUITests;
+			sourceTree = "<group>";
+		};
+		A12734521E5FB1990089DADE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A12734531E5FB1990089DADE /* MTHome */,
+				A12734571E5FB1990089DADE /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A12734531E5FB1990089DADE /* MTHome */ = {
+			isa = PBXGroup;
+			children = (
+				A12734541E5FB1990089DADE /* Controller */,
+				A12734551E5FB1990089DADE /* Model */,
+				A12734561E5FB1990089DADE /* View */,
+			);
+			path = MTHome;
+			sourceTree = "<group>";
+		};
+		A12734541E5FB1990089DADE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A127345B1E5FB2070089DADE /* MTHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A12734551E5FB1990089DADE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A12734561E5FB1990089DADE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A12734571E5FB1990089DADE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A12734581E5FB1990089DADE /* Tool */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A12734581E5FB1990089DADE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		A127345A1E5FB1C10089DADE /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				A12734281E5FB0830089DADE /* Main.storyboard */,
+				A127342B1E5FB0830089DADE /* Assets.xcassets */,
+				A127342D1E5FB0830089DADE /* LaunchScreen.storyboard */,
+				A12734301E5FB0830089DADE /* Info.plist */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A12734201E5FB0830089DADE /* MeiTuan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12734491E5FB0830089DADE /* Build configuration list for PBXNativeTarget "MeiTuan" */;
+			buildPhases = (
+				A127341D1E5FB0830089DADE /* Sources */,
+				A127341E1E5FB0830089DADE /* Frameworks */,
+				A127341F1E5FB0830089DADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeiTuan;
+			productName = MeiTuan;
+			productReference = A12734211E5FB0830089DADE /* MeiTuan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A12734341E5FB0830089DADE /* MeiTuanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A127344C1E5FB0830089DADE /* Build configuration list for PBXNativeTarget "MeiTuanTests" */;
+			buildPhases = (
+				A12734311E5FB0830089DADE /* Sources */,
+				A12734321E5FB0830089DADE /* Frameworks */,
+				A12734331E5FB0830089DADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12734371E5FB0830089DADE /* PBXTargetDependency */,
+			);
+			name = MeiTuanTests;
+			productName = MeiTuanTests;
+			productReference = A12734351E5FB0830089DADE /* MeiTuanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A127343F1E5FB0830089DADE /* MeiTuanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A127344F1E5FB0830089DADE /* Build configuration list for PBXNativeTarget "MeiTuanUITests" */;
+			buildPhases = (
+				A127343C1E5FB0830089DADE /* Sources */,
+				A127343D1E5FB0830089DADE /* Frameworks */,
+				A127343E1E5FB0830089DADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12734421E5FB0830089DADE /* PBXTargetDependency */,
+			);
+			name = MeiTuanUITests;
+			productName = MeiTuanUITests;
+			productReference = A12734401E5FB0830089DADE /* MeiTuanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A12734191E5FB0830089DADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "李军";
+				TargetAttributes = {
+					A12734201E5FB0830089DADE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MX22E64P3H;
+						ProvisioningStyle = Automatic;
+					};
+					A12734341E5FB0830089DADE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MX22E64P3H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A12734201E5FB0830089DADE;
+					};
+					A127343F1E5FB0830089DADE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MX22E64P3H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A12734201E5FB0830089DADE;
+					};
+				};
+			};
+			buildConfigurationList = A127341C1E5FB0830089DADE /* Build configuration list for PBXProject "MeiTuan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A12734181E5FB0830089DADE;
+			productRefGroup = A12734221E5FB0830089DADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A12734201E5FB0830089DADE /* MeiTuan */,
+				A12734341E5FB0830089DADE /* MeiTuanTests */,
+				A127343F1E5FB0830089DADE /* MeiTuanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A127341F1E5FB0830089DADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A127342F1E5FB0830089DADE /* LaunchScreen.storyboard in Resources */,
+				A127342C1E5FB0830089DADE /* Assets.xcassets in Resources */,
+				A127342A1E5FB0830089DADE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12734331E5FB0830089DADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A127343E1E5FB0830089DADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A127341D1E5FB0830089DADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A127345C1E5FB2070089DADE /* MTHomeViewController.swift in Sources */,
+				A12734251E5FB0830089DADE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12734311E5FB0830089DADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A127343A1E5FB0830089DADE /* MeiTuanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A127343C1E5FB0830089DADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12734451E5FB0830089DADE /* MeiTuanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A12734371E5FB0830089DADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A12734201E5FB0830089DADE /* MeiTuan */;
+			targetProxy = A12734361E5FB0830089DADE /* PBXContainerItemProxy */;
+		};
+		A12734421E5FB0830089DADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A12734201E5FB0830089DADE /* MeiTuan */;
+			targetProxy = A12734411E5FB0830089DADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A12734281E5FB0830089DADE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12734291E5FB0830089DADE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A127342D1E5FB0830089DADE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A127342E1E5FB0830089DADE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A12734471E5FB0830089DADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A12734481E5FB0830089DADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A127344A1E5FB0830089DADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MX22E64P3H;
+				INFOPLIST_FILE = MeiTuan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.MeiTuan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A127344B1E5FB0830089DADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MX22E64P3H;
+				INFOPLIST_FILE = MeiTuan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.MeiTuan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A127344D1E5FB0830089DADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MX22E64P3H;
+				INFOPLIST_FILE = MeiTuanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.MeiTuanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeiTuan.app/MeiTuan";
+			};
+			name = Debug;
+		};
+		A127344E1E5FB0830089DADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MX22E64P3H;
+				INFOPLIST_FILE = MeiTuanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.MeiTuanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeiTuan.app/MeiTuan";
+			};
+			name = Release;
+		};
+		A12734501E5FB0830089DADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MX22E64P3H;
+				INFOPLIST_FILE = MeiTuanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.MeiTuanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MeiTuan;
+			};
+			name = Debug;
+		};
+		A12734511E5FB0830089DADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MX22E64P3H;
+				INFOPLIST_FILE = MeiTuanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.MeiTuanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MeiTuan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A127341C1E5FB0830089DADE /* Build configuration list for PBXProject "MeiTuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12734471E5FB0830089DADE /* Debug */,
+				A12734481E5FB0830089DADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12734491E5FB0830089DADE /* Build configuration list for PBXNativeTarget "MeiTuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A127344A1E5FB0830089DADE /* Debug */,
+				A127344B1E5FB0830089DADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A127344C1E5FB0830089DADE /* Build configuration list for PBXNativeTarget "MeiTuanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A127344D1E5FB0830089DADE /* Debug */,
+				A127344E1E5FB0830089DADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A127344F1E5FB0830089DADE /* Build configuration list for PBXNativeTarget "MeiTuanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12734501E5FB0830089DADE /* Debug */,
+				A12734511E5FB0830089DADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A12734191E5FB0830089DADE /* Project object */;
+}
