@@ -13,7 +13,9 @@
 		A127342F1E5FB0830089DADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A127342D1E5FB0830089DADE /* LaunchScreen.storyboard */; };
 		A127343A1E5FB0830089DADE /* MeiTuanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12734391E5FB0830089DADE /* MeiTuanTests.swift */; };
 		A12734451E5FB0830089DADE /* MeiTuanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12734441E5FB0830089DADE /* MeiTuanUITests.swift */; };
-		A127345C1E5FB2070089DADE /* MTHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127345B1E5FB2070089DADE /* MTHomeViewController.swift */; };
+		F40097921E610A95000E0737 /* MTHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400978E1E610A95000E0737 /* MTHomeViewController.swift */; };
+		F40097931E610A95000E0737 /* MTButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097911E610A95000E0737 /* MTButtonItem.swift */; };
+		F40097951E610AB1000E0737 /* MTButtonItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40097941E610AB1000E0737 /* MTButtonItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,9 @@
 		A12734401E5FB0830089DADE /* MeiTuanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiTuanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12734441E5FB0830089DADE /* MeiTuanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeiTuanUITests.swift; sourceTree = "<group>"; };
 		A12734461E5FB0830089DADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A127345B1E5FB2070089DADE /* MTHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTHomeViewController.swift; sourceTree = "<group>"; };
+		F400978E1E610A95000E0737 /* MTHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTHomeViewController.swift; sourceTree = "<group>"; };
+		F40097911E610A95000E0737 /* MTButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTButtonItem.swift; sourceTree = "<group>"; };
+		F40097941E610AB1000E0737 /* MTButtonItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTButtonItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,42 +129,10 @@
 		A12734521E5FB1990089DADE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A12734531E5FB1990089DADE /* MTHome */,
+				F400978C1E610A95000E0737 /* MTHome */,
 				A12734571E5FB1990089DADE /* Other */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		A12734531E5FB1990089DADE /* MTHome */ = {
-			isa = PBXGroup;
-			children = (
-				A12734541E5FB1990089DADE /* Controller */,
-				A12734551E5FB1990089DADE /* Model */,
-				A12734561E5FB1990089DADE /* View */,
-			);
-			path = MTHome;
-			sourceTree = "<group>";
-		};
-		A12734541E5FB1990089DADE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A127345B1E5FB2070089DADE /* MTHomeViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A12734551E5FB1990089DADE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A12734561E5FB1990089DADE /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A12734571E5FB1990089DADE /* Other */ = {
@@ -187,6 +159,40 @@
 				A12734301E5FB0830089DADE /* Info.plist */,
 			);
 			name = resource;
+			sourceTree = "<group>";
+		};
+		F400978C1E610A95000E0737 /* MTHome */ = {
+			isa = PBXGroup;
+			children = (
+				F400978D1E610A95000E0737 /* Controller */,
+				F400978F1E610A95000E0737 /* Model */,
+				F40097901E610A95000E0737 /* View */,
+			);
+			path = MTHome;
+			sourceTree = "<group>";
+		};
+		F400978D1E610A95000E0737 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F400978E1E610A95000E0737 /* MTHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F400978F1E610A95000E0737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F40097901E610A95000E0737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F40097911E610A95000E0737 /* MTButtonItem.swift */,
+				F40097941E610AB1000E0737 /* MTButtonItem.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A127342F1E5FB0830089DADE /* LaunchScreen.storyboard in Resources */,
+				F40097951E610AB1000E0737 /* MTButtonItem.xib in Resources */,
 				A127342C1E5FB0830089DADE /* Assets.xcassets in Resources */,
 				A127342A1E5FB0830089DADE /* Main.storyboard in Resources */,
 			);
@@ -326,7 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A127345C1E5FB2070089DADE /* MTHomeViewController.swift in Sources */,
+				F40097931E610A95000E0737 /* MTButtonItem.swift in Sources */,
+				F40097921E610A95000E0737 /* MTHomeViewController.swift in Sources */,
 				A12734251E5FB0830089DADE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +586,7 @@
 				A127344B1E5FB0830089DADE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A127344C1E5FB0830089DADE /* Build configuration list for PBXNativeTarget "MeiTuanTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +595,7 @@
 				A127344E1E5FB0830089DADE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A127344F1E5FB0830089DADE /* Build configuration list for PBXNativeTarget "MeiTuanUITests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +604,7 @@
 				A12734511E5FB0830089DADE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
