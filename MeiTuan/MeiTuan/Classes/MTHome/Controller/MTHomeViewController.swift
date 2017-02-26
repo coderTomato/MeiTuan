@@ -10,7 +10,8 @@ import UIKit
 
 class MTHomeViewController: UIViewController {
 
-    var cateVc = UIViewController();
+    
+    var currentPopover : UIPopoverController?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,25 +44,23 @@ class MTHomeViewController: UIViewController {
 
 extension MTHomeViewController{
     func category() {
+        currentPopover?.dismiss(animated: true);
         let item : UIBarButtonItem = navigationItem.leftBarButtonItems![1];
-        let itemView = item.customView as! MTButtonItem;
         
-        cateVc.modalPresentationStyle = .popover;
-        cateVc.popoverPresentationController?.sourceView = itemView;
-        cateVc.popoverPresentationController?.sourceRect = itemView.bounds;
-        cateVc.popoverPresentationController?.backgroundColor = UIColor.yellow;
-        present(cateVc, animated: true, completion: nil);
+        let pop = UIPopoverController(contentViewController: ContentViewController());
+        pop.backgroundColor = UIColor.yellow;
+        currentPopover = pop;
+        currentPopover?.present(from: item, permittedArrowDirections: .any, animated: false);
     }
     
     func address() {
+        currentPopover?.dismiss(animated: true);
         
         let item : UIBarButtonItem = navigationItem.leftBarButtonItems![2];
-        let itemView = item.customView as! MTButtonItem;
-        cateVc.modalPresentationStyle = .popover;
-        cateVc.popoverPresentationController?.sourceView = itemView;
-        cateVc.popoverPresentationController?.sourceRect = itemView.bounds;
-        cateVc.popoverPresentationController?.backgroundColor = UIColor.blue;
-        present(cateVc, animated: true, completion: nil);
+        let pop = UIPopoverController(contentViewController: ContentViewController());
+        pop.backgroundColor = UIColor.orange;
+        currentPopover = pop;
+        currentPopover?.present(from: item, permittedArrowDirections: .any, animated: false);
     }
     
     func sort() {
