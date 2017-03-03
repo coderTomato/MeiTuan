@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentViewController" customModule="MeiTuan" customModuleProvider="target">
             <connections>
+                <outlet property="leftView" destination="ePd-Vf-bt7" id="aQ5-H4-Yq7"/>
+                <outlet property="rightView" destination="p9S-zy-e7v" id="0RE-U6-uAz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +20,41 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ePd-Vf-bt7">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="u9m-a8-SPh"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2G7-nx-PoU"/>
+                        <outlet property="delegate" destination="-1" id="Xto-iK-SU6"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p9S-zy-e7v">
+                    <rect key="frame" x="150" y="0.0" width="150" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="nkJ-98-WXo"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="01c-gB-Qvk"/>
+                        <outlet property="delegate" destination="-1" id="lb8-Iy-UDI"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ePd-Vf-bt7" secondAttribute="bottom" id="Jwn-Ki-req"/>
+                <constraint firstAttribute="bottom" secondItem="p9S-zy-e7v" secondAttribute="bottom" id="Npa-fE-8Ic"/>
+                <constraint firstItem="ePd-Vf-bt7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nqe-BS-Wsg"/>
+                <constraint firstItem="ePd-Vf-bt7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T5n-WI-YXD"/>
+                <constraint firstItem="p9S-zy-e7v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bkC-Xx-Jyq"/>
+                <constraint firstItem="p9S-zy-e7v" firstAttribute="leading" secondItem="ePd-Vf-bt7" secondAttribute="trailing" id="veJ-Di-4wE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
 </document>

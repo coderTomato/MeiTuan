@@ -12,6 +12,7 @@ class MTHomeViewController: UIViewController {
 
     
     var currentPopover : UIPopoverController?;
+    var itemView : MTButtonItem?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,24 +47,50 @@ extension MTHomeViewController{
     func category() {
         currentPopover?.dismiss(animated: true);
         let item : UIBarButtonItem = navigationItem.leftBarButtonItems![1];
-        
-        let pop = UIPopoverController(contentViewController: ContentViewController());
-        pop.backgroundColor = UIColor.yellow;
+        itemView = item.customView as! MTButtonItem;
+        let contentVc = ContentViewController();
+        contentVc.delegate = self;
+        DataTool.getCategoryData { (datas:[CategoryModel]) in
+            contentVc.leftRightArr = DataBridgeTool.changeModel(cateModels: datas);
+        }
+        let pop = UIPopoverController(contentViewController:contentVc);
+        pop.backgroundColor = UIColor.white;
         currentPopover = pop;
         currentPopover?.present(from: item, permittedArrowDirections: .any, animated: false);
     }
     
     func address() {
         currentPopover?.dismiss(animated: true);
-        
         let item : UIBarButtonItem = navigationItem.leftBarButtonItems![2];
-        let pop = UIPopoverController(contentViewController: ContentViewController());
-        pop.backgroundColor = UIColor.orange;
+        let contentVc = ContentViewController();
+        contentVc.delegate = self;
+        DataTool.getAddressData { (addressArr:[AddressModel]) in
+            contentVc.leftRightArr = DataBridgeTool.changeAddressModel(addressModels: addressArr);
+        }
+        let pop = UIPopoverController(contentViewController: contentVc);
+        pop.backgroundColor = UIColor.white;
         currentPopover = pop;
         currentPopover?.present(from: item, permittedArrowDirections: .any, animated: false);
     }
     
     func sort() {
-         print("sort");
+        currentPopover?.dismiss(animated: true);
+        let item : UIBarButtonItem = navigationItem.leftBarButtonItems![3];
+        let contentVc = ContentViewController();
+        contentVc.delegate = self;
+        DataTool.getSortData { (sortArr : [SortModel]) in
+            contentVc.leftRightArr = DataBridgeTool.changeSortModel(sortModels: sortArr);
+        }
+        let pop = UIPopoverController(contentViewController: contentVc);
+        pop.backgroundColor = UIColor.white;
+        currentPopover = pop;
+        currentPopover?.present(from: item, permittedArrowDirections: .any, animated: false);
+    }
+}
+
+extension MTHomeViewController : ContentViewControllerDelegate{
+    func contentViewController(didSelectedAt model: LeftRightModel) {
+        itemView?.subTitleLbl.text = model.title;
+        itemView?.iconImgView.image = model.image;
     }
 }
